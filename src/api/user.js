@@ -3,9 +3,12 @@ import axios from 'axios';
 
 import {jwtDecode} from 'jwt-decode';
 
-const API_URL = 'http://localhost:3000/user';
+
+// const API_URL = 'http://localhost:3000/user';
+const API_URL ='https://backend-0se9.onrender.com/user'
 
 export const registerUser = async (userData) => {
+ 
   try {
     const response = await axios.post(`${API_URL}/register`, userData);
     return response;
@@ -15,6 +18,7 @@ export const registerUser = async (userData) => {
 };
 
 export const loginUser = async (userData) => {
+ 
   try {
     const response = await axios.post(`${API_URL}/login`, userData);
     return response;

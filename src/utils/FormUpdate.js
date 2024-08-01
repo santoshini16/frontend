@@ -2,7 +2,7 @@ import axios from 'axios';
 import { setFormDetails } from '../configureslice/workspaceSlice';
 import { getForm, getFormData } from '../api/formService';
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://backend-0se9.onrender.com';
 
 const getConfig = () => {
   const token = localStorage.getItem('token');
